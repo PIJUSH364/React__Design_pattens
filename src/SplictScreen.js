@@ -5,17 +5,17 @@ const Container = styled.div`
   display: flex;
 `;
 const SubContainer = styled.div`
-  flex: 1;
+  flex: ${(props) => props.weight};
 `;
 
-function SplictScreen({ left: Left, right: Right }) {
+function SplictScreen({ left: Left, right: Right, leftWeight, rightWeight }) {
   return (
     <Container>
-      <SubContainer>
+      <SubContainer weight={leftWeight}>
         <Left />
       </SubContainer>
       <hr />
-      <SubContainer>
+      <SubContainer weight={rightWeight}>
         <Right />
       </SubContainer>
     </Container>
