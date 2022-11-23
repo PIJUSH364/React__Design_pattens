@@ -8,16 +8,14 @@ const SubContainer = styled.div`
   flex: ${(props) => props.weight};
 `;
 
-function SplictScreen({ left: Left, right: Right, leftWeight, rightWeight }) {
+function SplictScreen({ leftWeight, rightWeight, children }) {
+  const [left, right] = children;
+
   return (
     <Container>
-      <SubContainer weight={leftWeight}>
-        <Left />
-      </SubContainer>
+      <SubContainer weight={leftWeight}>{left}</SubContainer>
       <hr />
-      <SubContainer weight={rightWeight}>
-        <Right />
-      </SubContainer>
+      <SubContainer weight={rightWeight}>{right}</SubContainer>
     </Container>
   );
 }

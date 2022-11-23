@@ -27,12 +27,10 @@ const RightHandComponent = () => {
 };
 function App() {
   return (
-    <SplictScreen
-      left={LeftHandComponent}
-      right={RightHandComponent}
-      leftWeight={1}
-      rightWeight={3}
-    />
+    <SplictScreen leftWeight={1} rightWeight={3}>
+      <LeftHandComponent />
+      <RightHandComponent />
+    </SplictScreen>
   );
 }
 
