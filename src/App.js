@@ -1,7 +1,9 @@
-import { Divider } from '@mui/material';
+import { Divider, Stack } from '@mui/material';
 import React from 'react';
 import LargepersonListItem from './people/LargepersonListItem';
 import SmallpersonListItem from './people/SmallpersonListItem';
+import LargeProductListItem from './products/LargeProductListItem';
+import SmallproductListItem from './products/SmallproductListItem';
 import RegularList from './RegularList';
 const people = [
   {
@@ -47,19 +49,34 @@ const products = [
 
 function App() {
   return (
-    <>
-      <RegularList
-        items={people}
-        resourceName="person"
-        itemComponent={SmallpersonListItem}
-      />
-      <Divider />
-      <RegularList
-        items={people}
-        resourceName="person"
-        itemComponent={LargepersonListItem}
-      />
-    </>
+    <Stack justifyContent="space-around" direction="row">
+      <div>
+        <RegularList
+          items={people}
+          resourceName="person"
+          itemComponent={SmallpersonListItem}
+        />
+        <Divider />
+        <RegularList
+          items={people}
+          resourceName="person"
+          itemComponent={LargepersonListItem}
+        />
+      </div>
+      <div>
+        <RegularList
+          items={products}
+          resourceName="product"
+          itemComponent={SmallproductListItem}
+        />
+        <Divider />
+        <RegularList
+          items={products}
+          resourceName="product"
+          itemComponent={LargeProductListItem}
+        />
+      </div>
+    </Stack>
   );
 }
 
