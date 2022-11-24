@@ -5,25 +5,32 @@ import UnControlledOnbordingFlow from './UnControlledOnbordingFlow';
 const StepOne = ({ goToNext }) => (
   <>
     <h1>StepOne</h1>
-    <button onClick={goToNext}>Next</button>
+    <button onClick={() => goToNext({ name: 'pijush ray mondal' })}>
+      Next
+    </button>
   </>
 );
 const StepTwo = ({ goToNext }) => (
   <>
     <h1>StepTwo</h1>
-    <button onClick={goToNext}>Next</button>
+    <button onClick={() => goToNext({ age: 100 })}>Next</button>
   </>
 );
 const StepThree = ({ goToNext }) => (
   <>
     <h1>StepThree</h1>
-    <button onClick={goToNext}>Next</button>
+    <button onClick={() => goToNext({ hairColor: 'brownGray' })}>Next</button>
   </>
 );
 
 function App() {
   return (
-    <UnControlledOnbordingFlow>
+    <UnControlledOnbordingFlow
+      onFinish={(data) => {
+        alert('onboarding Complete!');
+        console.log(data);
+      }}
+    >
       <StepOne />
       <StepTwo />
       <StepThree />
