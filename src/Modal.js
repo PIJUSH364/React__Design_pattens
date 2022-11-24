@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import CloseIcon from '@mui/icons-material/Close';
+
 const ModalBackground = styled.div`
   position: fixed;
   z-index: 1;
