@@ -1,0 +1,5 @@
+## what is onBoarding flow
+
+-OnBoarding flow is a list of pages they are render stepWise
+    like : firstPage take user name 2nd page take useraddress 3rd page is product deatils like that
+    
