@@ -8,7 +8,12 @@ function App() {
     <>
       {/* <UncontrolledForm /> */}
       {/* <ControlledForm /> */}
-      <Modal />
+      <Modal>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe atque
+          dolore dicta voluptatum!
+        </p>
+      </Modal>
     </>
   );
 }
