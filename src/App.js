@@ -1,11 +1,11 @@
-import { Typography } from '@mui/material';
 import React from 'react';
+import UncontrolledForm from './UncontrolledForm';
 
 function App() {
   return (
-    <div>
-      <Typography variant="h5"> Home 😃</Typography>
-    </div>
+    <>
+      <UncontrolledForm />
+    </>
   );
 }
 
