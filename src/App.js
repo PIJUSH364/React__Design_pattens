@@ -2,9 +2,24 @@ import React from 'react';
 import UnControlledOnbordingFlow from './UnControlledOnbordingFlow';
 
 // this all are component
-const StepOne = () => <h1>StepOne</h1>;
-const StepTwo = () => <h1>StepTwo</h1>;
-const StepThree = () => <h1>StepThree</h1>;
+const StepOne = ({ goToNext }) => (
+  <>
+    <h1>StepOne</h1>
+    <button onClick={goToNext}>Next</button>
+  </>
+);
+const StepTwo = ({ goToNext }) => (
+  <>
+    <h1>StepTwo</h1>
+    <button onClick={goToNext}>Next</button>
+  </>
+);
+const StepThree = ({ goToNext }) => (
+  <>
+    <h1>StepThree</h1>
+    <button onClick={goToNext}>Next</button>
+  </>
+);
 
 function App() {
   return (
