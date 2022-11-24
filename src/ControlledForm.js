@@ -1,19 +1,25 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function ControlledForm() {
-  const [name, setname] = useState('');
+  const [inputError, setInputError] = useState('');
+  const [name, setName] = useState('');
   const [age, setAge] = useState();
-  const [HairColor, setHairColor] = useState('');
-  
+  const [hairColor, setHairColor] = useState('');
+
   const handleSubmit = (e) => {
     const userInfo = {
-      name: nameInput.current.value,
-      age: ageInput.current.value,
-      hairColor: hairColorInput.current.value,
+      name: name,
+      age: age,
+      hairColor: hairColor,
     };
     console.log(userInfo);
     e.preventDefault();
   };
+  useEffect(() => {
+    if (name.length < 2) {
+      setInputError('name must be two or more chacter');
+    }
+  }, [name]);
   return (
     <>
       <form onSubmit={handleSubmit}>
@@ -21,17 +27,26 @@ function ControlledForm() {
           type="text"
           name="name"
           placeholder="your name"
-          ref={nameInput}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
-        <input type="number" name="age" placeholder="your age" ref={ageInput} />
+        <input
+          type="number"
+          name="age"
+          placeholder="your age"
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+        />
         <input
           type="text"
           name="hairColor"
           placeholder="your hairColor"
-          ref={hairColorInput}
+          value={hairColor}
+          onChange={(e) => setHairColor(e.target.value)}
         />
         <button type="submit">Submit</button>
       </form>
+      <h4>{inputError}</h4>
     </>
   );
 }
