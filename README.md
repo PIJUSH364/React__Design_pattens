@@ -1,7 +1,7 @@
 # Chapter__01 ==> Layout Component
 
 ## (i) Split_Screen Component
-     we are much easy dsplit screen
+     we are much easy split screen
 ## (ii) Render List of item
    ### more effectively render list of all object 
     there are different array of object render by  single regularlist component
@@ -20,5 +20,3 @@
   ####  HigherOrderComponents useCase
     Sharing complex behavior between multiple components (much like with container components)
     Adding extra funcatinality to existing components
-
-    Hoc are more usefull when same functionality with various component
