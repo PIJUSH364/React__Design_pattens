@@ -20,3 +20,5 @@
   ####  HigherOrderComponents useCase
     Sharing complex behavior between multiple components (much like with container components)
     Adding extra funcatinality to existing components
+
+    Hoc are more usefull when same functionality with various component
