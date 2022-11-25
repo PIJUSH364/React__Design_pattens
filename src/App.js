@@ -1,11 +1,16 @@
-import { Typography } from '@mui/material';
 import React from 'react';
+import { printProps } from './printProps';
+import { UserInfo } from './UserInfo';
+import { widthUser } from './widthUser';
 
+const UserInfoWarraped = printProps(UserInfo);
+const UserInfoLoder = widthUser(UserInfo);
 function App() {
   return (
-    <div>
-      <Typography variant="h5"> Home 😃</Typography>
-    </div>
+    <>
+      <UserInfoWarraped name="Pijush" />
+      <UserInfoLoder />
+    </>
   );
 }
 
