@@ -1,11 +1,11 @@
 import React from 'react';
-import { useCurrentUser } from './useCurrentUser';
+import { useCurrentUser } from '../oneHook/useCurrentUser';
+import { useResource } from './useResource';
 
-function UserInfo() {
-  const user = useCurrentUser();
+function ResourceUserInfo() {
+  const user = useResource('https://jsonplaceholder.typicode.com/users');
   const { name, website, phone } = user || {};
 
-  console.log('from userinfo', user);
   return user ? (
     <>
       <h3>{name}</h3>
@@ -19,4 +19,4 @@ function UserInfo() {
   );
 }
 
-export default UserInfo;
+export default ResourceUserInfo;
