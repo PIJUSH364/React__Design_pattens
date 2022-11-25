@@ -1,7 +1,7 @@
 # Chapter__01 ==> Layout Component
 
 ## (i) Split_Screen Component
-     we are much easy dsplit screen
+     we are much easy split screen
 ## (ii) Render List of item
    ### more effectively render list of all object 
     there are different array of object render by  single regularlist component
