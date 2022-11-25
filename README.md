@@ -20,3 +20,14 @@
   ####  HigherOrderComponents useCase
     Sharing complex behavior between multiple components (much like with container components)
     Adding extra funcatinality to existing components
+
+# Chapter__05 ==> HigherOrderComponents Components
+  various custom hook more efficiently data fatching
+
+
+# Chapter__06 ==> functional Programing in react 
+   1. Minimize mutation and state change
+   2. keeps functions independent of external data
+   3. Treats function as first-class citizens
+
+   ex.controlled component,function component,higher ordr component,Recurcive component,component component,Partially applied component
