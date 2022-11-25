@@ -20,3 +20,9 @@
   ####  HigherOrderComponents useCase
     Sharing complex behavior between multiple components (much like with container components)
     Adding extra funcatinality to existing components
+
+# Chapter__05 ==> customHookPatterns
+  special hooks that we define ourselves,and that usally combine the functionality of one or more exicting react hooks like "useState","useEffect"
+
+  ### CustomHook 👍
+     sharing complex behavior between multiple components (much like with Hoc and container Components)
