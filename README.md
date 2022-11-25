@@ -26,3 +26,5 @@
 
   ### CustomHook 👍
      sharing complex behavior between multiple components (much like with Hoc and container Components)
+     ***Custom hook just a function
+     1)one of the use case useing custom hook we could easily data fatching
