@@ -5,6 +5,7 @@ import { widthUser } from './widthUser';
 
 const UserInfoWarraped = printProps(UserInfo);
 const UserInfoLoder = widthUser(UserInfo);
+
 function App() {
   return (
     <>
