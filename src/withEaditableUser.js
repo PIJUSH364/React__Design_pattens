@@ -1,4 +1,4 @@
-//! higher order component
+//! higher order component(function)
 
 import axios from 'axios';
 import { useEffect, useState } from 'react';
