@@ -1,10 +1,12 @@
 import { Typography } from '@mui/material';
 import React from 'react';
+import { BigSuccessButton, DangerButton } from './composition';
 
 function App() {
   return (
     <div>
-      <Typography variant="h5"> Home 😃</Typography>
+      <DangerButton text="DangerButton" />
+      <BigSuccessButton text="Success" size="large" />
     </div>
   );
 }
